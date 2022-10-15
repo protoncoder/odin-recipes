@@ -7,7 +7,8 @@
 }
 
 .bg-recipe, .bg-main, .main-recipes {
-  background-color:blanchedalmond;
+  //background-color:blanchedalmond;
+  background-color: greenyellow;
   display: block;
   margin-left: auto;
   margin-right: auto;
