@@ -1,0 +1,24 @@
+.pic, .main-recipes {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height:auto;
+}
+
+.bg-recipe, .bg-main {
+  background-color:blanchedalmond;
+}
+
+.main-title, .main-recipes, .title-recipe, .description, .ingredients, .steps, .ol-steps {
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.main-recipes {
+  width:10%;
+}
