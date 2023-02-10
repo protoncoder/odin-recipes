@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+/* ##########
+*  # HEADER # 
+*  ########## */
 .header {
   display: flex;
   justify-content:space-between;
@@ -22,6 +27,9 @@
   border: none;
   border-radius: 10px;
   box-shadow: 1px 1px 10px 1px orangered;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-family: 'Merienda One', cursive; 
 }
 
 .left-side-header {
@@ -51,16 +59,15 @@
   text-shadow: 1px 1px 5px orange;
   background: rgba(204, 204, 204, 0.);
   border: 3px solid green;
-  font-family: Comic Sans MS;
+  font-family: 'Merienda One', cursive;
 }
 
 #pizza-logo {
   height: 100px;
   width: 120px;
-  margin: 5px;
+  margin: 10px;
   border-radius: 500px;
-  box-shadow: 0px 0px 50px 0px red, 0px 0px 5px 0px yellow;
-  padding: 0px;
+  box-shadow: 0px 0px 30px 0px red, 0px 0px 5px 0px yellow;
   text-decoration: none;
   outline: none;
 }
@@ -77,4 +84,75 @@
   50% {
     opacity: 0.1;
   }
+}
+
+/* ###########
+*  # CONTENT #
+*  ########### */
+.container {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  border-radius: 4px;
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+}
+
+.footer {
+  height: 72px;
+  background-image: linear-gradient(to right, rgba(14, 0, 1, 0.727), rgb(3, 1, 20));
+  color: darkmagenta;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Merienda One', cursive;
+}
+
+#footer-credentials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  font-family: 'Merienda One', cursive;
+  gap: 10px;
+}
+
+html {
+  /* height: -webkit-fill-available; */
+  height: 100%;
+}
+
+body {
+margin: 0;
+min-height: 100%;
+/* min-height: 100vh;
+min-height: -webkit-fill-available; */
+display: flex;
+flex-direction: column;
+}
+
+.body2 {
+  flex: 1;
+  display: flex;
+}
+
+.btn-repo {
+  border-radius: 5px;
+  padding: 10px;
+  background: linear-gradient(pink, yellow);
+  box-shadow: 1px 1px 10px 1px orangered;
+  font-family: 'Merienda One', cursive;
+  border: none;
+}
+
+#repo-link {
+  text-decoration: none;
 }
