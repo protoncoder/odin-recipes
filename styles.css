@@ -1,29 +1,80 @@
-.pic.recipe {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width:250px;
-  max-height:250px;
+.header {
+  display: flex;
+  justify-content:space-between;
+  background-image: linear-gradient(to right, rgba(14, 0, 1, 0.727), rgb(3, 1, 20));
+  align-items: center;;
 }
 
-.bg-recipe, .bg-main, .main-recipes {
-  background-color:blanchedalmond;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  height:auto;
+.left-side-header, .right-side-header {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 100px;
+  padding: 20px;
 }
 
-.title-recipe, .main-title, .description, .steps {
-  text-align: center;
+.left-side-header-btn, .right-side-header-btn {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(pink, yellow);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 1px orangered;
 }
 
-.main-recipes, .ingredients {
-  text-align:justify;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.left-side-header {
+  margin: 10px;
+  gap: 50px;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.main-recipes {
-  width:10%;
+.right-side-header {
+  padding: 0px;
+  margin: 10px;
+  gap: 50px;
+}
+
+.holy-moly {
+  height: 50px;
+  width: 100px;
+  display: flex;
+}
+
+#logo {
+  color: rgba(255, 0, 179, 0.842);
+  font-weight: bolder;
+  font-size: 30px;
+  text-shadow: 1px 1px 5px orange;
+  background: rgba(204, 204, 204, 0.);
+  border: 3px solid green;
+  font-family: Comic Sans MS;
+}
+
+#pizza-logo {
+  height: 100px;
+  width: 120px;
+  margin: 5px;
+  border-radius: 500px;
+  box-shadow: 0px 0px 50px 0px red, 0px 0px 5px 0px yellow;
+  padding: 0px;
+  text-decoration: none;
+  outline: none;
+}
+
+.icon-header {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  animation: blinky 5s linear infinite; 
+}
+
+@keyframes blinky {
+  50% {
+    opacity: 0.1;
+  }
 }
