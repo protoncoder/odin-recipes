@@ -78,13 +78,30 @@
   justify-content: center;
   align-items: center;
   animation: blinky 5s linear infinite; 
+  border-radius: 5000px;
+  border-color: orangered;
+  border-style: dashed;
+  border-bottom: none;
+  border-top: none;
 }
 
 @keyframes blinky {
+  0% {
+    box-shadow: 0 0 50px orangered;
+  }
   50% {
-    opacity: 0.1;
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0 0 50px orangered;
   }
 }
+
+/* @keyframes blink {
+  50% {
+      opacity: 0.1;
+  }
+} */
 
 /* ###########
 *  # CONTENT #
@@ -148,6 +165,10 @@ flex-direction: column;
   display: flex;
 }
 
+#repo:active {
+  transform: translateY(4px);
+}
+
 .btn-repo {
   border-radius: 5px;
   padding: 10px;
@@ -155,8 +176,41 @@ flex-direction: column;
   box-shadow: 1px 1px 10px 1px orangered;
   font-family: 'Merienda One', cursive;
   border: none;
+  /* btn_repo glowing */
+  /* support for different browsers */
+  /* -webkit-animation: blink 5.0s linear infinite;
+  -moz-animation: blink 5.0s linear infinite;
+  -ms-animation: blink 5.0s linear infinite;
+  -o-animation: blink 5.0s linear infinite; */
+  animation: blink 5.0s linear infinite;
 }
+
+/* btn_repo glowing */
+@keyframes blink {
+  0% {
+      box-shadow: 0 0 50px orangered;
+  }
+  50% {
+      box-shadow: none;
+  }
+  100% {
+      box-shadow: 0 0 50px orangered;
+  }
+}
+/* support for chrome */
+/* @-webkit-keyframes blink {
+  0% {
+      box-shadow: 0 0 50px #EC7A44;
+  }
+  50% {
+      box-shadow: 0 0 0;
+  }
+  100% {
+      box-shadow: 0 0 50px #EC7A44;
+  }
+} */
 
 #repo-link {
   text-decoration: none;
 }
+
