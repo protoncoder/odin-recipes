@@ -1,22 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
 
-
-html {
-  /* height: -webkit-fill-available; */
-  height: 100%;
+.pic-recipe {
+  width: 250px;
+  height: 200px;
 }
 
-body {
-/* min-height: 100%; */
-min-height: 100vh;
-min-height: -webkit-fill-available;
-display: flex;
-flex-direction: column;
-}
-
-.body2 {
-  flex: 1;
-  display: flex;
+a {
+  /* removes <a> underline */
+  text-decoration: none;
+  /* fix <a> being shown in different color than other buttons */
+  color: inherit;
 }
 
 /* ##########
@@ -116,32 +109,74 @@ flex-direction: column;
   }
 }
 
-/* @keyframes blink {
-  50% {
-      opacity: 0.1;
-  }
-} */
-
 /* ###########
 *  # CONTENT #
 *  ########### */
+
+body {
+  color: rgba(0, 0, 0, 0.95);
+  font-size: 18px;
+  font-family: 'Merienda one';
+  /* background: url(/images/veggies.jpg) no-repeat center center fixed;
+  background-size: cover; */
+}
+
 .container {
-  padding: 32px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.card {
-  border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
-  border-radius: 4px;
-  padding: 16px;
-  margin: 16px;
-  width: 300px;
-  height: 250px;
-  
+.title-recipe {
+  text-align: center;
+}
+
+.pic-and-descr {
+  display: flex;
+  padding: 20px 490px 20px 490px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.img1 {
+  max-height: 200px;
+  max-width: 250px;
+}
+
+.descr1 {
+  display: flex;
+  height: 200px;
+  padding: 0px 0px 0px 10px;
+}
+
+.descr2 {
+  display: inline-block;
+  padding: 10px 0px 0px 0px;
+}
+
+.pic-recipe {
+  float: left;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Ingredients */
+.ingr-wrap {
+  display: flex;
+  gap: 30px;
+}
+
+.ingr-wrap h3 {
+  text-align: center;
+}
+
+/* steps */
+.steps {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 500px 0px 500px;
 }
 
 /* ##########
@@ -166,6 +201,7 @@ flex-direction: column;
   list-style-type: none;
   font-family: 'Merienda One', cursive;
   gap: 10px;
+  background-color: #0c0d0d;
 }
 
 #repo:active {
@@ -216,4 +252,3 @@ flex-direction: column;
 #repo-link {
   text-decoration: none;
 }
-
